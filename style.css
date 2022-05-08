@@ -11,7 +11,37 @@
 
 */
 
+/* Global Styling */
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+h2 {
+  font-family: 'BhuTuka Expanded One', cursive;
+  /* font-family: 'Island Moments', cursive; */
+}
+
+/*---------------- End Global Styling  ---------------------------------------------*/
+
+/* ---------------------------- Page Start / Title ------------------- */
+#pageStart {
+  background-color: #757761;
+  height: 100px;
+}
+#titleStart {
+  color: #085903;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Island Moments', cursive;
+}
+
+/*------------------------------ End of Page Start / Title -----------------------*/
+
 /*-------------------- Navigation Bar Styling ------------------*/
+
 nav {
   /* border: 1px solid red; */
   margin: 0 auto;
@@ -50,14 +80,14 @@ nav a:focus {
 }
 
 nav a:hover {
-  color: #81f499;
-  background-color: #157145;
+  color: #1b1725;
+  background-color: #bdf4c9;
 }
 
 /* --------------------End Of Nav Bar -------------------------- */
 
 .headerPage {
-  background-color: #157145;
+  background-color: #81f499;
   margin: 0 auto;
 }
 
@@ -67,49 +97,49 @@ nav a:hover {
   justify-content: center;
 }
 
-/* ---------------------------- Page Start / Title ------------------- */
-#pageStart {
-  background-color: #757761;
-  height: 200px;
-}
-#titleStart {
-  color: #bfb6bb;
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
-
-/*------------------------------ End of Page Start / Title -----------------------*/
-
 /*---------- About Article -----------*/
 
 .artAbout {
   background-color: #bfb6bb;
   border: 2px solid red;
-  height: 150px;
+  height: 250px;
   margin: 0 auto;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
 .artAbout h2 {
   display: flex;
   border: 2px solid yellow;
   width: 40%;
-  flex-grow: 1;
   justify-content: center;
-  padding: 2.5rem 1rem;
   margin: 0;
+  font-family: 'Island Moments', cursive;
+  font-size: 50px;
 }
 
 .artAbout p {
-  display: flex;
   border: 2px solid red;
   flex-grow: 1;
-  justify-content: center;
   padding: 3rem 2.5rem;
   margin: 0;
+  color: #157145;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 /*---------- End About Article -----------*/
+
+/*--------------------- Philosophy Article -----------------------*/
+
+.artPhilo {
+  background-color: #bfb6bb;
+  border: 2px solid red;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/*--------------------- End of Philosophy Article -----------------------*/
