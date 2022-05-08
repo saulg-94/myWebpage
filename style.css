@@ -14,7 +14,7 @@
 /*-------------------- Navigation Bar Styling ------------------*/
 nav {
   /* border: 1px solid red; */
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 nav ul {
@@ -28,6 +28,7 @@ nav ul {
 
 nav li {
   background-color: #81f499;
+  border-radius: 3%;
 }
 
 nav li:hover {
@@ -57,6 +58,7 @@ nav a:hover {
 
 .headerPage {
   background-color: #157145;
+  margin: 0 auto;
 }
 
 #logo {
@@ -64,3 +66,50 @@ nav a:hover {
   display: flex;
   justify-content: center;
 }
+
+/* ---------------------------- Page Start / Title ------------------- */
+#pageStart {
+  background-color: #757761;
+  height: 200px;
+}
+#titleStart {
+  color: #bfb6bb;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+/*------------------------------ End of Page Start / Title -----------------------*/
+
+/*---------- About Article -----------*/
+
+.artAbout {
+  background-color: #bfb6bb;
+  border: 2px solid red;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.artAbout h2 {
+  display: flex;
+  border: 2px solid yellow;
+  width: 40%;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 2.5rem 1rem;
+  margin: 0;
+}
+
+.artAbout p {
+  display: flex;
+  border: 2px solid red;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 3rem 2.5rem;
+  margin: 0;
+}
+
+/*---------- End About Article -----------*/
