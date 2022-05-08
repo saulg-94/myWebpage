@@ -11,10 +11,9 @@
 
 */
 
-/* Navigation Bar Styling */
+/*-------------------- Navigation Bar Styling ------------------*/
 nav {
-  border: 1px solid red;
-  width: 50%;
+  /* border: 1px solid red; */
   margin: 1rem auto;
 }
 
@@ -22,13 +21,26 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  background-color: #81f499;
+}
+
+nav li:hover {
 }
 
 nav a {
-  color: #068cb1;
+  color: #1b1725;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 600;
+  display: block;
+  padding: 0.5rem 1rem;
+  /* border: 1px solid red; */
 }
 
 nav a:focus {
@@ -37,7 +49,18 @@ nav a:focus {
 }
 
 nav a:hover {
-  color: #ff583d;
+  color: #81f499;
+  background-color: #157145;
 }
 
 /* --------------------End Of Nav Bar -------------------------- */
+
+.headerPage {
+  background-color: #157145;
+}
+
+#logo {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
