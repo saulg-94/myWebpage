@@ -35,7 +35,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin: 0;
-  font-family: 'Island Moments', cursive;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 /*------------------------------ End of Page Start / Title -----------------------*/
@@ -125,7 +125,6 @@ nav a:hover {
   padding: 3rem 2.5rem;
   margin: 0;
   color: #157145;
-  font-family: 'Readex Pro', sans-serif;
 }
 
 /*---------- End About Article -----------*/
@@ -142,4 +141,85 @@ nav a:hover {
   align-items: center;
 }
 
+.artPhilo h2 {
+  display: flex;
+  border: 2px solid yellow;
+  width: 40%;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Island Moments', cursive;
+  font-size: 50px;
+}
+
+.artPhilo p {
+  border: 2px solid red;
+  flex-grow: 1;
+  padding: 3rem 2.5rem;
+  margin: 0;
+  color: #157145;
+}
+
 /*--------------------- End of Philosophy Article -----------------------*/
+
+/*---------------------- Community info section  -------------------------*/
+
+.artCommunity {
+  background-color: #bfb6bb;
+  border: 2px solid red;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.artCommunity h2 {
+  display: flex;
+  border: 2px solid yellow;
+  width: 40%;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Island Moments', cursive;
+  font-size: 50px;
+}
+
+.artCommunity p {
+  border: 2px solid red;
+  flex-grow: 1;
+  padding: 3rem 2.5rem;
+  margin: 0;
+  color: #157145;
+}
+
+/*---------------------- End of Community info section  -------------------------*/
+
+/*--------------------------- Value info section  -------------------------------*/
+
+.artValue {
+  background-color: #bfb6bb;
+  border: 2px solid red;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.artValue h2 {
+  display: flex;
+  border: 2px solid yellow;
+  width: 40%;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Island Moments', cursive;
+  font-size: 50px;
+}
+.artValue p {
+  border: 2px solid red;
+  flex-grow: 1;
+  padding: 3rem 2.5rem;
+  margin: 0;
+  color: #157145;
+}
+
+/*--------------------------- End of Value info section  -------------------------------*/
