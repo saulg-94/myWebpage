@@ -1,0 +1,121 @@
+/*
+
+TABLE OF CONTENTS
+
+  1. Global styles
+  2. Hero
+  3. Navigation
+  4. Trips
+  5. CTA
+  6. Team
+  7. Problem
+    7a. Actions
+  8. Gallery
+  9. Footer
+    9a. Contact
+    9b. Connect
+  10. Media Queries
+    10a. Media Query, (min-width: 700px)
+      10a-i. Hero
+      10a-ii. Navigation, Large screen
+      10a-iii. Trips, Large screen
+      10a-iv. CTA summaries, Large screen rules
+      10a-v. Team, Large screen rules
+      10a-vi. Problem
+      10a-vii. Actions
+      10a-viii. Footer
+    10b. Media Query, (min-width: 1000px)
+    10c. Feature Query
+
+*/
+
+/* ############ 1. Global Styles ############ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #222;
+}
+
+/* ############ 2. Hero ############ */
+
+/* ############ 3. Navigation ############ */
+
+nav {
+  height: 5rem;
+  padding: 0 2rem;
+  background: rgb(104, 83, 83);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: ; */
+}
+
+h2 {
+  margin-bottom: 0;
+  color: #222369;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0 1rem;
+}
+
+.nav-link {
+  text-transform: capitalize;
+  color: #222;
+  font-size: 1.25rem;
+}
+
+/* ############ 4. Trips ############ */
+
+/* ############ 5. CTA ############ */
+
+/* ############ 6. Team ############ */
+
+/* ############ 7. Problem ############ */
+
+/* ############ 7a. Problem > Action ############ */
+
+/* ############ 8. Gallery ############ */
+
+/* ######### 9. Footer ######### */
+
+/* ######### 9a. Footer > Contact ######### */
+
+/* ######### Contact Form ######### */
+
+/* ######### 9b. Footer > Connect ######### */
+
+/* ############ 10. Media Queries ############ */
+
+/* ############ 10a. Media Query, (min-width: 700px) ############ */
+
+/* ######### 10a-i. HERO, Large screen rules ######### */
+
+/* ######### 10a-ii. Navigation, Large screen rules ######### */
+
+/* ######### 10a-iii. Trips, Large screen rules ######### */
+
+/* ######### 10a-iv. CTA summaries, Large screen rules ######### */
+
+/* ######### 10a-v. Team, Large screen rules ######### */
+
+/* ######### 10a-vi. Problem, Large screen rules ######### */
+
+/* ######### 10a-vii. Actions, Large screen rules ######### */
+
+/* ######### 10a-viii. Footer, Large screen rules ######### */
+
+/* ############ 10b. Media Query, (min-width: 1000px) ############ */
+
+/* ######### 10b-i. Footer, X-Large screen rules ######### */
+
+/* ############ 10c. Feature Query ############ */
+/* SAFARI 11+ */
