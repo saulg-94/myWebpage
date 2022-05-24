@@ -53,7 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* box-shadow: ; */
+  box-shadow: ;
 }
 
 h2 {
@@ -73,7 +73,12 @@ h2 {
   font-size: 1.25rem;
 }
 
-/* ############ 4. Trips ############ */
+/* ############ 4. Header ############ */
+
+header {
+  background: #f3f3f3;
+  border: 2px solid red;
+}
 
 /* ############ 5. CTA ############ */
 
