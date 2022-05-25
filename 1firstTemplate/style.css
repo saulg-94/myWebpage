@@ -65,6 +65,7 @@ h2 {
 .nav-links {
   display: flex;
   gap: 0 1rem;
+  list-style: none;
 }
 
 .nav-link {
@@ -78,11 +79,73 @@ h2 {
 header {
   background: #f3f3f3;
   border: 2px solid red;
+  min-height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* ############ 5. CTA ############ */
+/* ############ 5. About Me ############ */
 
-/* ############ 6. Team ############ */
+.myArticle {
+  min-height: 100vh;
+  border: 3px solid red;
+  background-color: #f3f3d3;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.articleHeading {
+  /* justify-self: center; */
+  /* align-self: center; */
+  border: 2px solid green;
+  height: 25%;
+}
+
+.articleP {
+  align-self: center;
+  height: 25%;
+  border: 3px solid orange;
+}
+
+/* ############ 6. Projects ############ */
+
+.myProjects {
+  background: #c057573c;
+  border: 5px solid green;
+}
+
+.projectHeader {
+  height: 60px;
+  background-color: #222369;
+  color: #f3f3f3;
+  border: 4px dashed yellow;
+}
+
+#projectHeaders1 {
+  height: 60px;
+  background-color: #318d51;
+  color: #f3f3f3;
+  border: 4px solid red;
+}
+#projectHeaders2 {
+  height: 60px;
+  background-color: #732681;
+  color: #f3f3f3;
+  border: 4px dashed green;
+}
+#projectHeaders3 {
+  height: 60px;
+  background-color: #855426;
+  color: #f3f3f3;
+  border: 4px solid black;
+}
+
+#projectP {
+  height: 80px;
+  background: #f3f3f3;
+}
 
 /* ############ 7. Problem ############ */
 
