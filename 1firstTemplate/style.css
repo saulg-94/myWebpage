@@ -38,8 +38,8 @@ TABLE OF CONTENTS
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #222;
+  font-family: 'Fira Code', monospace;
+  color: rgb(14, 12, 12);
 }
 
 /* ############ 2. Hero ############ */
@@ -53,7 +53,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: ;
+  /* box-shadow: ; */
 }
 
 h2 {
@@ -106,63 +106,92 @@ header {
 /* ############ 6. Projects ############ */
 
 .myProjects {
-  background: #bab1d7;
-  border: 5px solid green;
+  background: rgb(104, 83, 83);
+  border: 5px solid rgb(146, 10, 10);
   display: grid;
   grid-template: 100px 1fr / 1fr 4fr 1fr;
   gap: 10px;
 }
 
 .projectHeader {
+  display: grid;
   height: 100px;
   background-color: #222369;
   color: #f3f3f3;
   border: 4px dashed yellow;
   grid-column: 1/4;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
 }
 
 #projectHeaders1 {
+  display: grid;
   height: 60px;
   background-color: #318d51;
   color: #f3f3f3;
   border: 4px solid red;
   grid-row: 2;
   grid-column-start: 2;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
 }
 #projectHeaders2 {
+  display: grid;
   height: 60px;
   background-color: #732681;
   color: #f3f3f3;
   border: 4px dashed green;
   grid-row: 4;
   grid-column-start: 2;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
 }
 #projectHeaders3 {
+  display: grid;
   height: 60px;
   background-color: #855426;
   color: #f3f3f3;
   border: 4px solid black;
   grid-row: 6;
   grid-column-start: 2;
+  font-size: 2rem;
+  justify-content: center;
+  align-content: center;
 }
 
 #projectP1 {
+  display: grid;
   height: 80px;
   background: #f3f3f3;
   grid-row: 3;
   grid-column-start: 2;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-content: center;
 }
 #projectP2 {
+  display: grid;
   height: 80px;
   background: #f3f3f3;
   grid-row: 5;
   grid-column-start: 2;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-content: center;
 }
 #projectP3 {
+  display: grid;
   height: 80px;
   background: #f3f3f3;
   grid-row: 7;
   grid-column-start: 2;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-content: center;
 }
 
 /* ############ 7. Problem ############ */
