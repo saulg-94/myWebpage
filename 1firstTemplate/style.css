@@ -2,6 +2,7 @@
 
 TABLE OF CONTENTS
 
+  0. Variables
   1. Global styles
   2. Hero
   3. Navigation
@@ -29,6 +30,47 @@ TABLE OF CONTENTS
 
 */
 
+/* 
+===========
+Variables
+===========
+ */
+
+:root {
+  /* font colors being used */
+  --primaryFontColor: #5dd39e;
+  --mainBlack: #222;
+  --offWhite: #f7f7f7;
+  /* end of font colors being used*/
+
+  /* background colors being used*/
+  --mainWhite: #fff;
+  --secondaryGrey: #e5e5e5;
+  --anotherBrownColor: #605856;
+  /* end of background colors being used*/
+
+  /* colors not being used */
+  --darkGrey: #afafaf;
+  --anotherGrey: #d0ccd0;
+  --anotherWhite: #fbfcff;
+  --secondaryBlack: #36393b;
+  --secondaryColor: #04724d;
+  --secondaryBrownColor: #bfb6bb;
+
+  /* box shadow css */
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.1rem;
+}
+
+/* 
+===========
+End of Variables
+===========
+ */
+
 /* ############ 1. Global Styles ############ */
 
 * {
@@ -39,45 +81,87 @@ TABLE OF CONTENTS
 
 body {
   font-family: 'Fira Code', monospace;
-  color: rgb(14, 12, 12);
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1.25rem;
+}
+
+p {
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2;
+  padding: 1rem;
 }
 
 /* ############ 2. Hero ############ */
 
 /* ############ 3. Navigation ############ */
 
-nav {
-  height: 5rem;
+.navbar {
+  background: var(--anotherBrownColor);
   padding: 0 2rem;
-  background: rgb(104, 83, 83);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* box-shadow: ; */
-}
-
-h2 {
-  margin-bottom: 0;
-  color: #222369;
-  text-transform: uppercase;
 }
 
 .nav-links {
-  display: flex;
-  gap: 0 1rem;
-  list-style: none;
+  text-transform: capitalize;
+  padding: 1rem 0;
 }
 
-.nav-link {
-  text-transform: capitalize;
-  color: #222;
-  font-size: 1.25rem;
+.nav-links a {
+  display: block;
+  color: var(--primaryFontColor);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+
+.nav-links a:hover {
+  color: var(--offWhite);
+}
+
+.nav-links .nav-icon {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-links {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.3fr 0.3fr 0.3fr;
+  }
+  .nav-links .nav-icon {
+    display: block;
+    align-items: var(--dark-shadow);
+    align-self: center;
+  }
 }
 
 /* ############ 4. Header ############ */
 
-header {
-  background: #f3f3f3;
+#myheader {
+  background: var(--mainWhite);
   border: 2px solid red;
   min-height: 25vh;
   display: flex;
@@ -90,12 +174,14 @@ header {
 .myArticle {
   min-height: 100vh;
   border: 3px solid red;
-  background-color: #f3f3d3;
+  background-color: var(--anotherBrownColor);
+  color: var(--primaryFontColor);
 }
 
 .articleHeading {
-  border: 2px solid green;
+  border: 3px solid green;
   height: 25%;
+  color: var(--offWhite);
 }
 
 .articleP {
@@ -105,93 +191,54 @@ header {
 
 /* ############ 6. Projects ############ */
 
-.myProjects {
-  background: rgb(104, 83, 83);
-  border: 5px solid rgb(146, 10, 10);
-  display: grid;
-  grid-template: 100px 1fr / 1fr 4fr 1fr;
-  gap: 10px;
+.title {
+  text-align: center;
 }
 
-.projectHeader {
-  display: grid;
-  height: 100px;
-  background-color: #222369;
-  color: #f3f3f3;
-  border: 4px dashed yellow;
-  grid-column: 1/4;
-  font-size: 2rem;
-  justify-content: center;
-  align-content: center;
-  text-transform: uppercase;
+.cards {
+  padding: 4rem 0;
 }
 
-#projectHeaders1 {
-  display: grid;
-  height: 60px;
-  background-color: #318d51;
-  color: #f3f3f3;
-  border: 4px solid red;
-  grid-row: 2;
-  grid-column-start: 2;
-  font-size: 2rem;
-  justify-content: center;
-  align-content: center;
-}
-#projectHeaders2 {
-  display: grid;
-  height: 60px;
-  background-color: #732681;
-  color: #f3f3f3;
-  border: 4px dashed green;
-  grid-row: 4;
-  grid-column-start: 2;
-  font-size: 2rem;
-  justify-content: center;
-  align-content: center;
-}
-#projectHeaders3 {
-  display: grid;
-  height: 60px;
-  background-color: #855426;
-  color: #f3f3f3;
-  border: 4px solid black;
-  grid-row: 6;
-  grid-column-start: 2;
-  font-size: 2rem;
-  justify-content: center;
-  align-content: center;
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
 }
 
-#projectP1 {
-  display: grid;
-  height: 80px;
-  background: #f3f3f3;
-  grid-row: 3;
-  grid-column-start: 2;
-  font-size: 1.2rem;
-  justify-content: center;
-  align-content: center;
+.card {
+  border: 1px solid darkgray;
+  margin-bottom: 3rem;
 }
-#projectP2 {
-  display: grid;
-  height: 80px;
-  background: #f3f3f3;
-  grid-row: 5;
-  grid-column-start: 2;
-  font-size: 1.2rem;
-  justify-content: center;
-  align-content: center;
+
+.card-info {
+  padding: 1rem;
 }
-#projectP3 {
+
+.card-footer {
+  background: darkgray;
+  padding: 0.5rem;
   display: grid;
-  height: 80px;
-  background: #f3f3f3;
-  grid-row: 7;
-  grid-column-start: 2;
-  font-size: 1.2rem;
-  justify-content: center;
-  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.card-footer span {
+  color: green;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr auto;
+}
+
+.cards-center {
+  display: grid;
+  gap: 0 2rem;
+  /* 3 column layout */
+  /* grid-template-columns: repeat(auto-fit, minmax(368px, 1fr)); */
+  /* 4 column layout */
+  grid-template-columns: repeat(auto-fit, minmax(268.5px, 1fr));
 }
 
 /* ############ 7. Problem ############ */
